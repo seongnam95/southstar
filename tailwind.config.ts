@@ -11,27 +11,20 @@ const config: Config = {
       currentColor: 'currentColor',
       transparent: 'transparent',
 
-      background: 'var(--background)',
-      surface: 'var(--surface)',
+      primary: 'hsl(var(--primary))',
+
+      background: 'hsl(var(--background))',
+      surface: 'hsl(var(--surface))',
+      surfaceAccent: 'hsl(var(--surface-accent))',
+
       foreground: {
-        DEFAULT: 'var(--foreground)',
-        accent: 'var(--foreground-accent)',
-        muted: 'var(--foreground-muted)',
+        DEFAULT: 'hsl(var(--foreground))',
+        accent: 'hsl(var(--foreground-accent))',
+        muted: 'hsl(var(--foreground-muted))',
+        subtle: 'hsl(var(--foreground-subtle))',
       },
-      primary: {
-        DEFAULT: 'var(--primary)',
-        accent: 'var(--primary-accent)',
-        surface: 'var(--primary-surface)',
-        foreground: 'var(--primary-foreground)',
-      },
-      border: {
-        DEFAULT: 'var(--border)',
-        accent: 'var(--border-accent)',
-      },
-      card: {
-        DEFAULT: 'var(--card)',
-        foreground: 'var(--card-foreground)',
-      },
+
+      border: 'hsl(var(--border))',
     },
     fontFamily: {
       pretendard: ['var(--pretendard)', ...fontFamily.sans],
