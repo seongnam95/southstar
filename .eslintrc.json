@@ -10,13 +10,14 @@
       "version": "detect"
     }
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "react-three"],
   "extends": [
     "next/core-web-vitals",
     "next/typescript",
     "airbnb",
     "airbnb-typescript",
-    "prettier"
+    "prettier",
+    "plugin:react-three/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -38,6 +39,7 @@
       {
         "devDependencies": ["**/*.{js,jsx,ts,tsx}"]
       }
-    ]
+    ],
+    "react/no-unknown-property": "off"
   }
 }
