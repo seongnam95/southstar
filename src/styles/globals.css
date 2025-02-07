@@ -1,26 +1,41 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@import 'tailwindcss/preflight.css' layer(base);
 
-html {
-  font-size: 10px;
-}
+@import './theme/colors.css';
+@import './theme/typo.css';
 
 body {
-  @apply bg-background text-foreground typo-body-16;
+  @apply bg-background text-foreground text-body-16;
 }
 
-:root {
-  --primary: 162 93% 36%;
+@theme {
+  --spacing: 0.4rem;
 
-  --background: 250 89% 5%;
-  --surface: 250 38% 10%;
-  --surface-accent: 250 24% 17%;
+  --breakpoint-sm: 500px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1200px;
 
-  --foreground: 0 0% 100% / 0.88;
-  --foreground-accent: 0 0% 100%;
-  --foreground-muted: 0 0% 100% / 0.67;
-  --foreground-subtle: 0 0% 100% / 0.4;
+  --radius-sm: 0.4rem;
+  --radius-md: 0.8rem;
+  --radius-lg: 1.2rem;
+  --radius-xl: 1.6rem;
+  --radius-2xl: 1.8rem;
+  --radius-full: 999rem;
 
-  --border: 251 47% 12%;
+  --font-pretendard: 'Pretendard', sans-serif;
+
+  --shadow-white: 0 0 1.2rem 0.1rem rgba(255, 255, 255, 0.9);
+}
+
+@layer base {
+  html {
+    font-size: 62.5%;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar: {
+      display: none;
+    }
+  }
 }

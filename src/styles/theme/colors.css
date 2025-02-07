@@ -1,0 +1,16 @@
+@theme {
+  --color-*: initial;
+
+  --color-primary: hsl(162 93% 36%);
+
+  --color-background: hsl(250 89% 5%);
+  --color-surface: hsl(250 38% 10%);
+  --color-surface-accent: hsl(250 24% 17%);
+
+  --color-foreground: hsl(0 0% 100% / 0.88);
+  --color-foreground-accent: hsl(0 0% 100%);
+  --color-foreground-muted: hsl(0 0% 100% / 0.67);
+  --color-foreground-subtle: hsl(0 0% 100% / 0.4);
+
+  --color-border: hsl(251 47% 12%);
+}
