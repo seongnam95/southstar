@@ -6,7 +6,6 @@ export function IntroLine({ className, ...props }: SVGProps<SVGSVGElement>) {
       height='1px'
       className={className}
       preserveAspectRatio='none'
-      vectorEffect='non-scaling-stroke'
       {...props}
     >
       <defs>
@@ -31,7 +30,7 @@ export function IntroLine({ className, ...props }: SVGProps<SVGSVGElement>) {
           y2='0%'
         >
           <stop offset='0%' stopColor='#ffffff' stopOpacity='0' />
-          <stop offset='100%' stopColor='#ffffff' stopOpacity='0.8' />
+          <stop offset='100%' stopColor='#ffffff' stopOpacity='0.7' />
         </linearGradient>
       </defs>
 
