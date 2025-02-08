@@ -11,10 +11,12 @@ body {
 @theme {
   --spacing: 0.4rem;
 
+  --breakpoint-*: initial;
   --breakpoint-sm: 500px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1200px;
 
+  --radius-*: initial;
   --radius-sm: 0.4rem;
   --radius-md: 0.8rem;
   --radius-lg: 1.2rem;
@@ -30,7 +32,9 @@ body {
 @layer base {
   html {
     font-size: 62.5%;
+  }
 
+  * {
     -ms-overflow-style: none;
     scrollbar-width: none;
 
