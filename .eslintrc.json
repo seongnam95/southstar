@@ -35,10 +35,18 @@
     "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
     "react/require-default-props": "off",
+    "arrow-body-style": "off",
     "import/no-extraneous-dependencies": [
       "error",
       {
         "devDependencies": ["**/*.{js,jsx,ts,tsx}"]
+      }
+    ],
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": ["arrow-function", "function-declaration"],
+        "unnamedComponents": "arrow-function"
       }
     ]
   }
